@@ -1,0 +1,64 @@
+.card{
+    width: 355.41px;
+    height: 181px;
+    border-radius: 15px;
+    background: #9B9B9B;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card div{
+    max-width: 302px;
+    height: 34px;
+    top: 192px;
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34.47px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    gap: 4px;
+}
+
+.card span {
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 34.47px;
+}
+
+.card button {
+    width: 167.65px;
+    height: 38px;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18.38px;
+    border-radius: 16px;
+    border: none;
+}
+
+@media screen and (max-width:425px) {
+    .card{
+        width: 250px;
+        height: 181px;
+    }
+    .card div {
+        font-size: 25px;
+        flex-direction: column;
+    }
+    .card span {
+        font-family: Ubuntu;
+        font-size:  25px;
+        font-weight: 700;
+        line-height: 34.47px;
+    }
+    .card button {
+        margin-top: 2rem;
+    }
+}

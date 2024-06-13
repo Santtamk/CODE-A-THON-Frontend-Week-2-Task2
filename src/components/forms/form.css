@@ -1,0 +1,132 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #FFFFFFC4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    gap: 0px;
+    border-radius: 3px 0px 0px 0px;
+    opacity: 0px;
+  }
+  
+  .form-content {
+    max-width: 538px;
+    height: 164px;
+    border-radius: 15px;
+    opacity: 0px;
+    background: #EFEFEFD9;
+  }
+  
+  .form-content form {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+  }
+  
+  .form-content h3 {
+    color: #000000;
+    margin: 1rem 1rem 1rem 0;
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-weight: 700;
+    padding: -1rem;
+  }
+  .form-content label {
+    margin-bottom: 10px;
+  }
+  
+  .form-content input {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    cursor: pointer;
+  }
+
+  .form-content__add-amount {
+    width: 217px;
+    border-radius: 15px;
+    opacity: 0px;
+    background: linear-gradient(0deg, #D9D9D9, #D9D9D9),linear-gradient(0deg, #FBFBFB, #FBFBFB);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+
+  }
+  
+  .form-content button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+  
+  .form-content button[type="button"] {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 1rem;
+  }
+
+  .form-content_div{
+    display: flex;
+    justify-content:space-between;
+    width: 502px;
+    height: 53px;
+    border-radius: 15px;
+    opacity: 0px;
+  }
+
+  .form-content_input{
+    background-color: #F4BB4A;
+    width: 145px;
+    opacity: 0px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    color: #FFFFFF;
+  }
+
+  .form-content_cancel{
+    width: 80px;
+    background: linear-gradient(0deg, #D9D9D9, #D9D9D9);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    color: #000000;
+  }
+
+@media screen and (max-width:550px) {
+  .form-content{
+    max-width: 280px;
+    height: 260px;
+  }
+  .form-content_div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .form-content_input{
+    width: 240px !important;
+  }
+  .form-content_cancel{
+    width: 240px !important;
+  }
+}
+
